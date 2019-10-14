@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".MensagensProntas">
+
+  <TextView android:id="@+id/written_messages"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp"
+    android:textSize="25sp"
+    android:text="Escolha uma mensagem pronta:" />
+
+  <TextView android:id="@+id/written_message1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp"
+    android:textSize="25sp"
+    android:text="SOS"
+    android:background="@drawable/rectangle"/>
+
+  <!--<TextView android:id="@+id/written_message2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="5sp"-->
+    <!--android:textSize="25sp"-->
+    <!--android:text="Estou com sede"-->
+    <!--android:background="@drawable/rectangle"/>-->
+
+  <!--<TextView android:id="@+id/written_message3"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="5sp"-->
+    <!--android:textSize="25sp"-->
+    <!--android:text="Estou sentindo dor"-->
+    <!--android:background="@drawable/rectangle"/>-->
+
+  <!--<TextView android:id="@+id/written_message4"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="5sp"-->
+    <!--android:textSize="25sp"-->
+    <!--android:text="Por favor, venha para cá"-->
+    <!--android:background="@drawable/rectangle"/>-->
+
+  <!--<TextView android:id="@+id/written_message5"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="5sp"-->
+    <!--android:textSize="25sp"-->
+    <!--android:text="Preciso ir ao banheiro"-->
+    <!--android:background="@drawable/rectangle"/>-->
+
+  <TextView android:id="@+id/chosen_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    android:text=""/>
+
+
+</LinearLayout>

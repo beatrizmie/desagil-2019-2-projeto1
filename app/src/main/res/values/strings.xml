@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Projeto1</string>
+
+    <string name="botao1"> Escrever mensagem </string>
+    <string name="botao2"> Mensagens prontas </string>
+    <string name="botao3"> Dicionario </string>
+    <string name="botao5"> OK </string>
+
+    <string name="msg"> Escolha uma mensagem pronta: </string>
+    <string name="con"> CONTATOS: </string>
+    <string name="botaoadd"> ADD </string>
+
+
+    <string name="text_message"> Escreva uma mensagem: </string>
+
+    <string name="contato1"> Harry Potter </string>
+    <string name="contato2"> Lucio Malfoy </string>
+    <string name="contato3"> Thor </string>
+
+
 </resources>
