@@ -1,39 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  android:orientation="vertical"
-  tools:context=".Tradutor">
-
-  <TextView android:id="@+id/roman_alphabet"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="5sp"
-    android:textSize="25sp"
-    android:text="Tesxto no alfabeto romano:" />
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Tradutor">
 
-  <EditView android:id="@+id/roman_displayer"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="5sp"
-    android:textSize="25sp"
-    android:hint="Escreva aqui..." />
+    <ListView
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/RomanoAlfabetica"
+        />
 
-  <TextView android:id="@+id/morse_alphabet"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="5sp"
-    android:textSize="25sp"
-    android:text="Texto em código Morse:" />
-
-  <EditText android:id="@+id/morse_displayer"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="5sp"
-    android:textSize="25sp"
-    android:hint="Escreva aqui..." />
-
-
-</LinearLayout>
+    <ListView
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/MorseAlfabetica"
+        />
+</android.support.constraint.ConstraintLayout>

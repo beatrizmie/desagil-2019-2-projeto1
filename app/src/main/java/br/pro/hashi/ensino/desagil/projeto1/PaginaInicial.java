@@ -1,34 +1,130 @@
 package br.pro.hashi.ensino.desagil.projeto1;
 
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.util.LinkedList;
 
 public class PaginaInicial extends AppCompatActivity {
 
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_pagina_inicial);
+    private LinkedList<TextView> pagina = new LinkedList<>();
+    private LinkedList<Integer> index = new LinkedList<>();
+    private String[] pageName  = {
+            "Escrever mensagem",
+            "SOS",
+            "Dicionario",
+            "Mensagem falada"
+    };
 
-    Button button1Example = findViewById(R.id.button1_example);
-    Button button2Example = findViewById(R.id.button2_example);
-    Button button3Example = findViewById(R.id.button3_example);
 
-    button1Example.setOnClickListener(v -> {
-      Intent intent = new Intent(PaginaInicial.this, EscreverMensagens.class);
-      startActivity(intent);
-    });
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_pagina_inicial);
 
-    button2Example.setOnClickListener(v -> {
-      Intent intent1 = new Intent(PaginaInicial.this, MensagensProntas.class);
-      startActivity(intent1);
-    });
+        TextView writeMsg = findViewById(R.id.writeMsg);
+        TextView defaultMsg = findViewById(R.id.defaultMsg);
+        TextView dictionaire = findViewById(R.id.dictionaire);
+        TextView speak = findViewById(R.id.speak);
+        Button buttonup =  findViewById(R.id.buttonup);
+        Button buttonok = findViewById(R.id.buttonok);
+        Button buttondown = findViewById(R.id.buttondown);
 
-    button3Example.setOnClickListener(v -> {
-      Intent intent2 = new Intent(PaginaInicial.this, Tradutor.class);
-      startActivity(intent2);
-    });
-  }
+
+        writeMsg.setText(this.pageName[0]);
+        pagina.add(writeMsg);
+        index.add(0);
+
+        defaultMsg.setText(this.pageName[1]);
+        pagina.add(defaultMsg);
+        index.add(1);
+
+        dictionaire.setText(this.pageName[2]);
+        pagina.add(dictionaire);
+        index.add(2);
+
+        speak.setText(this.pageName[3]);
+        pagina.add(dictionaire);
+        index.add(3);
+
+
+        buttonup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                up();
+            }
+        });
+
+        buttonok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if( getMsg() == "Escrever mensagem") {
+                    Intent intent = new Intent(PaginaInicial.this, EscreverMensagens.class);
+                    startActivity(intent);
+                }
+                else if (getMsg() == "SOS"){
+                    Intent intent = new Intent(PaginaInicial.this, MensagensProntas.class);
+                    startActivity(intent);
+                }
+                else if (getMsg() == "Dicionario"){
+                    Intent intent = new Intent(PaginaInicial.this, Tradutor.class);
+                    startActivity(intent);
+                }
+                else if (getMsg() == "Mensagem falada"){
+                    Intent intent = new Intent(PaginaInicial.this, TextToSpeak.class);
+                    startActivity(intent);
+                }
+
+            }
+        });
+
+        buttondown.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                down();
+            }
+        });
+
+    }
+
+        private String getMsg() {
+            return this.pageName[this.index.get(1)];
+        }
+
+        private void up() {
+
+            for (int i = 0; i <= this.pagina.size() - 1; i++) {
+                TextView text = this.pagina.get(i);
+                int paginaIndex = this.index.get(i);
+
+                if (paginaIndex - 1 >= 0) {
+                    text.setText(this.pageName[paginaIndex - 1]);
+                    this.index.set(i, paginaIndex - 1);
+                } else {
+                    text.setText(this.pageName[this.pageName.length - 1]);
+                    this.index.set(i, this.pageName.length - 1);
+                }
+            }
+        }
+
+        private void down(){
+            for (int i = 0; i <= this.pagina.size() - 1; i++) {
+                TextView text = this.pagina.get(i);
+                int paginaIndex = this.index.get(i);
+
+                if (paginaIndex + 1 <= this.pageName.length - 1) {
+                    text.setText(this.pageName[paginaIndex + 1]);
+                    this.index.set(i, paginaIndex + 1);
+                } else {
+                    text.setText(this.pageName[0]);
+                    this.index.set(i, 0);
+                }
+            }
+        }
+
 }
