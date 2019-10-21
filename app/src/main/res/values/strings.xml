@@ -1,40 +1,39 @@
 <resources>
-    <string name="app_name">Projeto1</string>
+  <string name="app_name">Projeto1</string>
 
-    //Pagina inicial
-    <string name="botao1"> Escrever mensagem </string>
-    <string name="botao2"> Mensagens prontas </string>
-    <string name="botao3"> Dicionario </string>
-    <string name="botao4"> UP </string>
-    <string name="botao5"> OK </string>
-    <string name="botao6"> down </string>
+  //Pagina inicial
+  <string name="botao1"> Escrever mensagem </string>
+  <string name="botao2"> Mensagens prontas </string>
+  <string name="botao3"> Dicionario </string>
+  <string name="botao4"> UP </string>
+  <string name="botao5"> OK </string>
+  <string name="botao6"> down </string>
 
-    //Mensagens prontas
-    <string name="msg"> Enviar mensagem de socorro </string>
-    <string name="con"> CONTATOS: </string>
-    <string name="msg1"> Estou com fome </string>
-    <string name="msg2"> Estou com sede </string>
-    <string name="msg3"> "Estou sentindo dor" </string>
-    <string name="msg4"> Por favor, venha para cá </string>
-    <string name="msg5"> Preciso ir ao banheiro </string>
-    <string name="botaoback"> BACK </string>
-    <string name="botaonext"> NEXT </string>
+  //Mensagens prontas
+  <string name="msg"> Enviar mensagem de socorro </string>
+  <string name="con"> CONTATOS: </string>
+  <string name="msg1"> Estou com fome </string>
+  <string name="msg2"> Estou com sede </string>
+  <string name="msg3"> "Estou sentindo dor" </string>
+  <string name="msg4"> Por favor, venha para cá </string>
+  <string name="msg5"> Preciso ir ao banheiro </string>
+  <string name="botaoback"> BACK </string>
+  <string name="botaonext"> NEXT </string>
 
 
+  <string name="text_message"> Escreva uma mensagem: </string>
+  <string name="show_message"> Mostrar mensagem </string>
 
-    <string name="text_message"> Escreva uma mensagem: </string>
-    <string name="show_message"> Mostrar mensagem </string>
+  <string name="tradutor1"> Texto no alfabeto romano </string>
+  <string name="escreva1"> Escreva aqui... </string>
+  <string name="tradutor2"> Texto em código Morse: </string>
+  <string name="escreva2"> Escreva aqui... </string>
 
-    <string name="tradutor1"> Texto no alfabeto romano </string>
-    <string name="escreva1"> Escreva aqui... </string>
-    <string name="tradutor2"> Texto em código Morse: </string>
-    <string name="escreva2"> Escreva aqui... </string>
+  <string name="botaosend"> Send </string>
 
-    <string name="botaosend"> Send </string>
-
-    <string name="contato1"> Harry Potter </string>
-    <string name="contato2"> Lucio Malfoy </string>
-    <string name="contato3"> Thor </string>
+  <string name="contato1"> Harry Potter </string>
+  <string name="contato2"> Lucio Malfoy </string>
+  <string name="contato3"> Thor </string>
 
 
 </resources>

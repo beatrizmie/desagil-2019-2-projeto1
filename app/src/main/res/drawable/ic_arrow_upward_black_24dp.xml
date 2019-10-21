@@ -1,29 +1,28 @@
 <layer-list>
-    <item>
-        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+  <item>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
 
-            <solid android:color="@color/white">
+      <solid android:color="@color/white">
 
-            </solid>
-            <corners android:radius="30dp" />
-            <padding
-                android:left="10dp"
-                android:top="10dp"
-                android:right="10dp"
-                android:bottom="10dp"
-                />
-        </shape>
-    </item>
-    <item>
-        <vector xmlns:android="http://schemas.android.com/apk/res/android"
-            android:width="24dp"
-            android:height="24dp"
-            android:viewportWidth="24.0"
-            android:viewportHeight="24.0">
-            <path
-                android:fillColor="@color/orange"
-                android:pathData="M4,12l1.41,1.41L11,7.83V20h2V7.83l5.58,5.59L20,12l-8,-8 -8,8z"/>
-        </vector>
-    </item>
+      </solid>
+      <corners android:radius="30dp" />
+      <padding
+        android:bottom="10dp"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp" />
+    </shape>
+  </item>
+  <item>
+    <vector xmlns:android="http://schemas.android.com/apk/res/android"
+      android:width="24dp"
+      android:height="24dp"
+      android:viewportWidth="24.0"
+      android:viewportHeight="24.0">
+      <path
+        android:fillColor="@color/orange"
+        android:pathData="M4,12l1.41,1.41L11,7.83V20h2V7.83l5.58,5.59L20,12l-8,-8 -8,8z" />
+    </vector>
+  </item>
 
 </layer-list>
