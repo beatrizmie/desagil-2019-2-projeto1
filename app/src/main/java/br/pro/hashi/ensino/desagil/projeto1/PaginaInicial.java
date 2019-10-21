@@ -18,7 +18,6 @@ public class PaginaInicial extends AppCompatActivity {
             "Escrever mensagem",
             "SOS",
             "Dicionario",
-            "Mensagem falada"
     };
 
 
@@ -30,7 +29,6 @@ public class PaginaInicial extends AppCompatActivity {
         TextView writeMsg = findViewById(R.id.writeMsg);
         TextView defaultMsg = findViewById(R.id.defaultMsg);
         TextView dictionaire = findViewById(R.id.dictionaire);
-        TextView speak = findViewById(R.id.speak);
         Button buttonup =  findViewById(R.id.buttonup);
         Button buttonok = findViewById(R.id.buttonok);
         Button buttondown = findViewById(R.id.buttondown);
@@ -48,9 +46,6 @@ public class PaginaInicial extends AppCompatActivity {
         pagina.add(dictionaire);
         index.add(2);
 
-        speak.setText(this.pageName[3]);
-        pagina.add(dictionaire);
-        index.add(3);
 
 
         buttonup.setOnClickListener(new View.OnClickListener() {
@@ -75,11 +70,6 @@ public class PaginaInicial extends AppCompatActivity {
                     Intent intent = new Intent(PaginaInicial.this, Tradutor.class);
                     startActivity(intent);
                 }
-                else if (getMsg() == "Mensagem falada"){
-                    Intent intent = new Intent(PaginaInicial.this, TextToSpeak.class);
-                    startActivity(intent);
-                }
-
             }
         });
 

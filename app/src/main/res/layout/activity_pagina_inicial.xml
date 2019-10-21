@@ -63,22 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/defaultMsg"
         tools:text="Dicionario" />
 
-    <TextView
-        android:id="@+id/speak"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_margin="20sp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="113dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/text"
-        android:text="@string/botao3"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dictionaire"
-        tools:text="Mensagem falada" />
+
 
     <Button
         android:id="@+id/buttonup"
